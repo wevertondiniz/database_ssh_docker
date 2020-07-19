@@ -1,4 +1,6 @@
 #!/bin/bash
+#Criado por Charles Sampaio
+#Execução de banco de dados em docker de forma simples. 
 
 DOCKER_VOLUME_DIR=$HOME/development
 CONTAINER_NAME="mongo"

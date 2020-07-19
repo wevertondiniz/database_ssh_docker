@@ -8,7 +8,6 @@ Adicionar permissão de execução chmod 777 database.sh
 
 executar ./database.sh  
 
-
 *Observação verificar o local que deseja adicionar o banco de dados.
 
 
