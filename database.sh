@@ -7,15 +7,6 @@ CONTAINER_NAME="mongo"
 VOLUME_DIR=$DOCKER_VOLUME_DIR/$CONTAINER_NAME
 IMAGE_NAME=$CONTAINER_NAME
 
-menu() {
-    echo "Escolha o banco de dados"
-    echo "1- MySQL"
-    echo "2- Mongo"
-    echo "3- SQL Server"
-    echo "4- Postgres"
-    echo "5- Sair"
-}
-
 
 create(){
 id=$(docker images $CONTAINER_NAME --format "{{.ID}}")
@@ -45,8 +36,6 @@ verifydir(){
         echo "Database" $VOLUME_DIR
     fi    
 }
-
-menu 
 
 #Executa o container
 id=$(docker ps -a --filter "name=$CONTAINER_NAME" --format "{{.ID}}")
